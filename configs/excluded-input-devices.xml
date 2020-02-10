@@ -27,5 +27,4 @@
 <!-- IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.                          -->
 <devices>
     <device name="qti-haptics"/>
-    <device name="aw8697_haptic"/>
 </devices>
