@@ -34,6 +34,7 @@ function disable_ultrasound_mic
 function enable_ultrasound
 {
     echo "enable ultrasound"
+    tinymix 'Audio Stream 0 App Type Cfg' 69937 10001 96000 2
     tinymix 'SLIM_0_RX SampleRate' 'KHZ_96'
     tinymix 'SLIM RX0 MUX' 'AIF1_PB'
     tinymix 'CDC_IF RX0 MUX' 'SLIM RX0'

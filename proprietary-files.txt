@@ -113,6 +113,8 @@ vendor/etc/acdbdata/Tutu/Tutu_workspaceFile.qwsp
 # Audio-Hardware
 vendor/lib/hw/audio.primary.default.so
 vendor/lib/hw/audio.primary.msmnile.so
+vendor/lib/hw/audio.r_submix.default.so
+vendor/lib/hw/audio.usb.default.so
 vendor/lib/libtinycompress_vendor.so
 vendor/lib/soundfx/libqcompostprocbundle.so
 vendor/lib/soundfx/libqcomvisualizer.so
@@ -120,6 +122,8 @@ vendor/lib/soundfx/libqcomvoiceprocessing.so
 vendor/lib/soundfx/libvolumelistener.so
 vendor/lib64/hw/audio.primary.default.so
 vendor/lib64/hw/audio.primary.msmnile.so
+vendor/lib64/hw/audio.r_submix.default.so
+vendor/lib64/hw/audio.usb.default.so
 vendor/lib64/libtinycompress_vendor.so
 vendor/lib64/soundfx/libqcompostprocbundle.so
 vendor/lib64/soundfx/libqcomvisualizer.so
@@ -289,6 +293,9 @@ vendor/lib/camera/com.qti.tuned.semco_imx586.bin
 vendor/lib/camera/com.qti.tuned.semco_s5k3m5.bin
 vendor/lib/camera/com.qti.tuned.sunny_largan_s5k3t1.bin
 vendor/lib/camera/com.qti.tuned.sunny_s5k3t1.bin
+vendor/lib/camera/com.qti.tuned.underdisplay_ofilm_s5k3t1.bin
+vendor/lib/camera/com.qti.tuned.underdisplay_sunny_largan_s5k3t1.bin
+vendor/lib/camera/com.qti.tuned.underdisplay_sunny_s5k3t1.bin
 vendor/lib/camera/components/com.almalence.node.sr.so
 vendor/lib/camera/components/com.altek.node.depurple.so
 vendor/lib/camera/components/com.qti.camx.chiiqutils.so
@@ -390,6 +397,9 @@ vendor/lib64/camera/com.qti.tuned.semco_imx586.bin
 vendor/lib64/camera/com.qti.tuned.semco_s5k3m5.bin
 vendor/lib64/camera/com.qti.tuned.sunny_largan_s5k3t1.bin
 vendor/lib64/camera/com.qti.tuned.sunny_s5k3t1.bin
+vendor/lib64/camera/com.qti.tuned.underdisplay_ofilm_s5k3t1.bin
+vendor/lib64/camera/com.qti.tuned.underdisplay_sunny_largan_s5k3t1.bin
+vendor/lib64/camera/com.qti.tuned.underdisplay_sunny_s5k3t1.bin
 vendor/lib64/camera/components/com.almalence.node.sr.so
 vendor/lib64/camera/components/com.altek.node.depurple.so
 vendor/lib64/camera/components/com.altek.node.distortioncorrection.so
@@ -541,6 +551,8 @@ vendor/etc/camera/CFR_para_UW.bin
 vendor/etc/camera/CFR_para_W.bin
 vendor/etc/camera/eisoverridesettings.txt
 vendor/etc/camera/eyelineblush.cng
+vendor/etc/camera/female_bg.png
+vendor/etc/camera/female_icon.png
 vendor/etc/camera/GpuKernelRepo.pb
 vendor/etc/camera/hdr_ui9_params.config
 vendor/etc/camera/LDC_FPC_TUNING_DATA.bin
@@ -548,11 +560,18 @@ vendor/etc/camera/LDC_PACKDATA_VENDORID_0x01.bin
 vendor/etc/camera/LDC_PACKDATA_VENDORID_0x03.bin
 vendor/etc/camera/LDC_table_src1.dat
 vendor/etc/camera/lf_facerank_model.bin
+vendor/etc/camera/male_bg.png
+vendor/etc/camera/male_icon.png
 vendor/etc/camera/megviifacepp_0_5_2_model
+vendor/etc/camera/Miui-Light.ttf
+vendor/etc/camera/MIUI_Time.ttf
 vendor/etc/camera/model_back.dlc
 vendor/etc/camera/model_front.dlc
 vendor/etc/camera/sceneDetection.xml
+vendor/etc/camera/score_bg.png
+vendor/etc/camera/score_icon.png
 vendor/etc/camera/sdm_ys_32p_120_21_5_perturb50.bin
+vendor/etc/camera/watermark_font_2300_3199.dat
 
 # Camera-firmware
 vendor/firmware/CAMERA_ICP.elf
@@ -652,6 +671,7 @@ vendor/lib64/mediadrm/libwvdrmengine.so
 
 # Display
 vendor/etc/dsi_samsung_fhd_ea8076_f1s_cmd_display_mi.xml
+vendor/etc/dsi_visionox_fhd_rm692a9_f1u_cmd_display_mi.xml
 
 # Display-Hardware
 vendor/bin/hw/vendor.qti.hardware.display.allocator@1.0-service
@@ -724,6 +744,7 @@ vendor/etc/qdcm_calib_data_nt35695b_truly_fhd_command_mode_dsi_panel.xml
 vendor/etc/qdcm_calib_data_nt35695b_truly_fhd_video_mode_dsi_panel.xml
 vendor/etc/qdcm_calib_data_samsung_ea8076_fhd_cmd_dsi_panel.xml
 vendor/etc/qdcm_calib_data_sharp_1080p_cmd_mode_dsi_panel.xml
+vendor/etc/qdcm_calib_data_xiaomi_f1u_41_06_fhd_cmd_dsi_panel.xml
 
 # ESE-Powermanager
 lib/vendor.qti.esepowermanager@1.0.so
@@ -832,6 +853,20 @@ vendor/firmware/Burst_RTP.bin
 vendor/firmware/Candy_RTP.bin
 vendor/firmware/Carousel_RTP.bin
 vendor/firmware/Celesta_RTP.bin
+vendor/firmware/CFM_Headshot_RTP.bin
+vendor/firmware/CFM_Headshot_Strong_RTP.bin
+vendor/firmware/CFM_Hero_Appear_RTP.bin
+vendor/firmware/CFM_ImpactFlesh_Normal_RTP.bin
+vendor/firmware/CFM_KillOne_RTP.bin
+vendor/firmware/CFM_KillOne_Strong_RTP.bin
+vendor/firmware/CFM_MultiKill_RTP.bin
+vendor/firmware/CFM_MultiKill_Strong_RTP.bin
+vendor/firmware/CFM_UI_Reward_OpenBox_RTP.bin
+vendor/firmware/CFM_UI_Reward_Task_RTP.bin
+vendor/firmware/CFM_Weapon_BLT_Shoot_RTP.bin
+vendor/firmware/CFM_Weapon_C4_Installed_RTP.bin
+vendor/firmware/CFM_Weapon_Grenade_Explode_RTP.bin
+vendor/firmware/CFM_Weapon_Grenade_KillOne_RTP.bin
 vendor/firmware/Charge_Wireless_RTP.bin
 vendor/firmware/Charge_Wire_RTP.bin
 vendor/firmware/Childhood_RTP.bin
@@ -876,6 +911,7 @@ vendor/firmware/Gesture_UpSlide_RTP.bin
 vendor/firmware/Glee_RTP.bin
 vendor/firmware/grenade_explosion_RTP.bin
 vendor/firmware/grenade_RTP.bin
+vendor/firmware/gtx8_limits_f1u.csv
 vendor/firmware/Guitar_RTP.bin
 vendor/firmware/Harp_RTP.bin
 vendor/firmware/Ice_Latte_RTP.bin
@@ -937,8 +973,6 @@ vendor/firmware/vehicle_dacia_RTP.bin
 vendor/firmware/vehicle_moto_RTP.bin
 vendor/firmware/vehicle_plane_RTP.bin
 vendor/firmware/Vigor_RTP.bin
-vendor/firmware/wlan/qca_cld/WCNSS_qcom_cfg.ini
-vendor/firmware/wlan/qca_cld/wlan_mac.bin
 
 # GPS
 etc/permissions/com.qti.location.sdk.xml
@@ -1045,14 +1079,12 @@ vendor/lib/libadreno_utils.so
 vendor/lib/libC2D2.so
 vendor/lib/libc2d30_bltlib.so
 vendor/lib/libCB.so
-vendor/lib/libEGL_adreno.so
 vendor/lib/libgsl.so
 vendor/lib/libhdr_tm.so
 vendor/lib/libllvm-glnext.so
 vendor/lib/libllvm-qcom.so
 vendor/lib/libOpenCL.so
 vendor/lib/libpvr.so
-vendor/lib/libq3dtools_adreno.so
 vendor/lib/libqseed3.so
 vendor/lib/libsdm-color.so
 vendor/lib/libsdm-diag.so
@@ -1070,14 +1102,12 @@ vendor/lib64/libadreno_utils.so
 vendor/lib64/libC2D2.so
 vendor/lib64/libc2d30_bltlib.so
 vendor/lib64/libCB.so
-vendor/lib64/libEGL_adreno.so
 vendor/lib64/libgsl.so
 vendor/lib64/libhdr_tm.so
 vendor/lib64/libllvm-glnext.so
 vendor/lib64/libllvm-qcom.so
 vendor/lib64/libOpenCL.so
 vendor/lib64/libpvr.so
-vendor/lib64/libq3dtools_adreno.so
 vendor/lib64/libqseed3.so
 vendor/lib64/libsdm-color.so
 vendor/lib64/libsdm-diag.so
@@ -1826,6 +1856,7 @@ vendor/etc/sensors/config/sns_tilt_sw_enabled.json
 vendor/etc/sensors/config/sns_tilt_to_wake.json
 vendor/etc/sensors/config/tcs3701.json
 vendor/etc/sensors/config/vl53l1_tof_0.json
+vendor/etc/sensors/judge_calibrated.json
 vendor/etc/sensors/sns_reg_config
 
 # Sensors
@@ -1871,9 +1902,11 @@ vendor/lib/vendor.qti.hardware.tui_comm@1.0.so
 vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
 
 # Thermal
+vendor/bin/hw/android.hardware.thermal@1.0-service
 vendor/bin/mi_thermald
 vendor/bin/thermal-engine
 vendor/bin/thermal_factory
+vendor/etc/init/android.hardware.thermal@1.0-service.rc
 vendor/etc/thermal-arvr.conf
 vendor/etc/thermal-camera.conf
 vendor/etc/thermal-chg-only.conf
@@ -1884,12 +1917,14 @@ vendor/etc/thermal-normal.conf
 vendor/etc/thermal-phone.conf
 vendor/etc/thermal-tgame.conf
 vendor/etc/thermald-devices.conf
+vendor/lib/hw/android.hardware.thermal@1.0-impl.so
+vendor/lib/hw/thermal.msmnile.so
 -vendor/lib/libthermalclient.so
+vendor/lib64/hw/android.hardware.thermal@1.0-impl.so
+vendor/lib64/hw/thermal.msmnile.so
 -vendor/lib64/libthermalclient.so
 
 # Thermal-Hardware
-vendor/lib/hw/thermal.msmnile.so
-vendor/lib64/hw/thermal.msmnile.so
 
 # Time
 -vendor/app/TimeService/TimeService.apk
@@ -2057,7 +2092,6 @@ vendor/lib/hw/vendor.xiaomi.hardware.misys@2.0-impl.so
 vendor/lib/hw/vendor.xiaomi.hardware.touchfeature@1.0-impl.so
 vendor/lib/hw/vendor.xiaomi.hardware.wireless@1.0-impl.so
 vendor/lib/libmlipay.so
-vendor/lib/libmt.so
 vendor/lib/libtida@1.2.so
 vendor/lib/vendor.xiaomi.hardware.citsensorservice@1.0.so
 vendor/lib/vendor.xiaomi.hardware.citsensorservice@1.0_vendor.so
@@ -2084,8 +2118,6 @@ vendor/lib64/hw/vendor.xiaomi.hardware.touchfeature@1.0-impl.so
 vendor/lib64/hw/vendor.xiaomi.hardware.wireless@1.0-impl.so
 vendor/lib64/libmlipay.so
 vendor/lib64/libmlipay@1.1.so
-vendor/lib64/libmt.so
-vendor/lib64/libmt@1.2.so
 vendor/lib64/libtida@1.2.so
 vendor/lib64/vendor.xiaomi.hardware.citsensorservice@1.0.so
 vendor/lib64/vendor.xiaomi.hardware.citsensorservice@1.0_vendor.so
@@ -2140,6 +2172,8 @@ vendor/etc/spk_hp.wav
 vendor/etc/ultrasound.wav
 
 # Misc
+-vendor/app/EidService/EidService.apk
+-vendor/app/NotchOverlay/NotchOverlay.apk
 vendor/bin/athdiag
 vendor/bin/batteryd
 vendor/bin/batterysecret
@@ -2159,10 +2193,13 @@ vendor/bin/ftmdaemon
 vendor/bin/hal_proxy_daemon
 vendor/bin/hdcp1prov
 vendor/bin/hdcp2p2prov
+vendor/bin/hw/vendor.rongcard.hardware.eid@1.0-service
+vendor/bin/hw/wpa_supplicant_static
 vendor/bin/KmInstallKeybox
 vendor/bin/ks
 vendor/bin/mdm_helper_proxy
 vendor/bin/minidump64
+vendor/bin/MI_IC
 vendor/bin/mm-vidc-omx-test
 vendor/bin/myftm
 vendor/bin/npu_launcher
@@ -2179,6 +2216,7 @@ vendor/bin/sigma_dut
 vendor/bin/spdaemon
 vendor/bin/spectraltool
 vendor/bin/test_diag
+vendor/bin/toucheventcheck
 vendor/bin/vendor_cmd_tool
 vendor/bin/vsimd
 vendor/bin/xtwifi-client
@@ -2199,6 +2237,7 @@ vendor/etc/init/init.time_daemon.rc
 vendor/etc/init/manifest_sku.rc
 vendor/etc/init/minidump.rc
 vendor/etc/init/qdcmss.rc
+vendor/etc/init/vendor.rongcard.hardware.eid@1.0-service.rc
 vendor/etc/lm/AdaptLaunchFeature.xml
 vendor/etc/lm/AppClassifierFeature.xml
 vendor/etc/lm/GameOptimizationFeature.xml
@@ -2232,20 +2271,22 @@ vendor/etc/tzlog.dict
 vendor/etc/XiaoAiNiZaiNa.uim
 vendor/etc/XiaoAiTongXue.uim
 vendor/lib/hw/displayfeature.default.so
+vendor/lib/hw/vendor.rongcard.hardware.eid@1.0-impl.so
 vendor/lib/libalAILDC.so
 vendor/lib/libalCFR.so
 vendor/lib/libalRnBRT_GL_GBWRAPPER.so
 vendor/lib/libcert_parse.wpa_s.so
 vendor/lib/libchrome.so
+vendor/lib/libclient2slpi.notifier.so
 vendor/lib/libdiagjni.so
 vendor/lib/libdiag_jni.so
 vendor/lib/libdng_sdk.so
 vendor/lib/libfastcrc.so
 vendor/lib/libfastrpc_utf_stub.so
 vendor/lib/libft2vendor.so
-vendor/lib/libGLESv2_adreno.so
 vendor/lib/libhta_controller.so
 vendor/lib/libhta_hexagon_runtime.so
+vendor/lib/libmt.so
 vendor/lib/libnanopb.so
 vendor/lib/libnbl_trusty.so
 vendor/lib/libnpu.so
@@ -2259,7 +2300,9 @@ vendor/lib/libteeclientjni.so
 vendor/lib/libultrasound.so
 vendor/lib/libwapi_cert.so
 vendor/lib/unnhal-acc-hta.so
+vendor/lib/vendor.rongcard.hardware.eid@1.0.so
 vendor/lib64/hw/displayfeature.default.so
+vendor/lib64/hw/vendor.rongcard.hardware.eid@1.0-impl.so
 vendor/lib64/libalAILDC.so
 vendor/lib64/libalCFR.so
 vendor/lib64/libalhLDC.so
@@ -2269,16 +2312,18 @@ vendor/lib64/libappclassifier.so
 vendor/lib64/libarcsat.so
 vendor/lib64/libcert_parse.wpa_s.so
 vendor/lib64/libchrome.so
+vendor/lib64/libclient2slpi.notifier.so
 vendor/lib64/libdiagjni.so
 vendor/lib64/libdiag_jni.so
 vendor/lib64/libdng_sdk.so
 vendor/lib64/libfastrpc_utf_stub.so
 vendor/lib64/libft2vendor.so
 vendor/lib64/libgameoptfeature.so
-vendor/lib64/libGLESv2_adreno.so
 vendor/lib64/libhta_controller.so
 vendor/lib64/libhta_hexagon_runtime.so
 vendor/lib64/libmdmimgload.so
+vendor/lib64/libmt.so
+vendor/lib64/libmt@1.2.so
 vendor/lib64/libnanopb.so
 vendor/lib64/libnbl_trusty.so
 vendor/lib64/libnpu.so
@@ -2292,3 +2337,4 @@ vendor/lib64/libteeclientjni.so
 vendor/lib64/libultrasound.so
 vendor/lib64/libwapi_cert.so
 vendor/lib64/unnhal-acc-hta.so
+vendor/lib64/vendor.rongcard.hardware.eid@1.0.so

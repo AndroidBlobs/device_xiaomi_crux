@@ -29,6 +29,7 @@
 
 import init.offline.log.rc
 import init.mi_thermald.rc
+import init.millet.rc
 import init.mishow.ctl.rc
 import init.batteryd.rc
 import init.batterysecret.rc
@@ -124,8 +125,12 @@ on post-fs-data
     mkdir /data/vendor/nfc 0770 nfc nfc
     chmod 666 /sys/class/drm/card0-DSI-1/disp_count
     chown system system /sys/class/drm/card0-DSI-1/wp_info
+    chown system system /sys/class/drm/card0-DSI-1/dim_alpha
+    chown system system /sys/class/drm/card0-DSI-1/fod_ui_ready
+    chown system system /sys/class/drm/card0-DSI-1/dim_layer_enable
     chmod 0644 /sys/class/drm/card0-DSI-1/wp_info
     chown system system /mnt/vendor/persist/display
+    mkdir /data/vendor/mqsas_common 0771 system system
 
 # add charge_logger service for dump charge message
 service charge_logger /vendor/bin/charge_logger
@@ -199,6 +204,13 @@ on property:vendor.display.lcd_density=560
 on property:vendor.display.lcd_density=640
    setprop dalvik.vm.heapgrowthlimit 512m
 
+on property:vendor.touch.area=0
+    write sys/bus/i2c/devices/3-0049/disable_area 0
+on property:vendor.touch.area=1
+    write sys/bus/i2c/devices/3-0049/disable_area 1
+on property:vendor.touch.area=2
+    write sys/bus/i2c/devices/3-0049/disable_area 2
+
 on boot && property:persist.vendor.usb.controller.default=*
     setprop vendor.usb.controller ${persist.vendor.usb.controller.default}
 
@@ -256,7 +268,6 @@ on charger
     mount ext4 /dev/block/bootdevice/by-name/persist /mnt/vendor/persist nosuid nodev barrier=1
 
 service vendor.qseecomd /vendor/bin/qseecomd
-    shutdown critical
     class core
     user root
     group root

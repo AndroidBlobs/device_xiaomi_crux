@@ -360,6 +360,12 @@ function configure_zram_parameters() {
         #    # Set Zram disk size=1GB for >=2GB Non-Go targets.
         #    echo 1073741824 > /sys/block/zram0/disksize
         #fi
+        if [ "$ProductName" == "crux" ]; then
+            if [ $MemTotal -gt 6291456 ] && [ $MemTotal -lt 9437184 ]; then
+                echo 2147483648 > /sys/block/zram0/disksize
+                echo 0 > /sys/module/lowmemorykiller/parameters/enable_adaptive_lmk
+            fi
+        fi
         mkswap /dev/block/zram0
         swapon /dev/block/zram0 -p 32758
     fi

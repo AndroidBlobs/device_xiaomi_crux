@@ -17,7 +17,7 @@ PRODUCT_MODEL := Mi9 Pro 5G
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 TARGET_VENDOR := xiaomi
 TARGET_VENDOR_PRODUCT_NAME := crux
-PRODUCT_BUILD_PROP_OVERRIDES += PRIVATE_BUILD_DESC="crux-user 9 PKQ1.190714.001 V10.4.6.0.PFXCNXM release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += PRIVATE_BUILD_DESC="crux-user 9 PKQ1.190714.001 9.12.19 release-keys"
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
-BUILD_FINGERPRINT := Xiaomi/crux/crux:9/PKQ1.190714.001/V10.4.6.0.PFXCNXM:user/release-keys
+BUILD_FINGERPRINT := Xiaomi/crux/crux:9/PKQ1.190714.001/9.12.19:user/release-keys

@@ -309,7 +309,7 @@ on post-fs-data
     chown radio radio /data/vendor/connectivity
 
     # Create directory used by audio subsystem
-    mkdir /data/vendor/audio 0770 audio audio
+    mkdir /data/vendor/audio 0771 audio audio
     # Create directory used by audio cit
     mkdir /data/vendor/cit 0770 system system
 
@@ -1108,7 +1108,7 @@ on property:sys.qbcharger.enable=true
 on property:sys.qbcharger.enable=false
     stop qbcharger
 
-service diag_mdlog_start /system/bin/diag_mdlog_system -n 20
+service diag_mdlog_start /system/bin/diag_mdlog_system -c -n 20
     class late_start
     user shell
     group system oem_2901 sdcard_rw sdcard_r media_rw

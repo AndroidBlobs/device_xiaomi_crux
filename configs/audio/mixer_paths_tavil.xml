@@ -3539,6 +3539,10 @@
         <path name="incall_music_uplink" />
     </path>
 
+    <path name="incall_music_uplink receiver">
+        <path name="incall_music_uplink" />
+    </path>
+
     <path name="incall_music_uplink handset">
         <path name="incall_music_uplink" />
     </path>
